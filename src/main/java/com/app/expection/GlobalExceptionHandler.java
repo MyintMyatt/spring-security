@@ -1,8 +1,7 @@
 package com.app.expection;
 
 
-import com.app.model.ApiResponse;
-import jakarta.validation.ValidationException;
+import com.app.model.response.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;

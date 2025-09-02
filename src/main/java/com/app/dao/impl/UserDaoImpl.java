@@ -2,7 +2,9 @@ package com.app.dao.impl;
 
 import com.app.dao.UserDao;
 import com.app.model.entity.User;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,11 +32,14 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public List<User> getAllUser() {
-        return sessionFactory
-                .getCurrentSession()
-                .createQuery("from User", User.class)
-                .getResultList();
+    public List<User> getAllUser(int pageNumber, int pageSize,String sortField,String sortOrder) {
+        Session session = sessionFactory.getCurrentSession();
+
+        String sql = "from User order by " + sortField + " " + sortOrder;
+        Query<User> query = session.createQuery(sql, User.class);
+        query.setFirstResult((pageNumber - 1) * pageSize);
+        query.setMaxResults(pageSize);
+        return query.getResultList();
     }
 
     @Override

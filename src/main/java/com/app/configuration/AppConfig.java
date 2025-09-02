@@ -6,15 +6,11 @@ import com.zaxxer.hikari.HikariDataSource;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.hibernate.SessionFactory;
 import org.modelmapper.ModelMapper;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.context.annotation.*;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.sql.DataSource;
 import java.util.Properties;
@@ -25,7 +21,8 @@ import java.util.Properties;
 @ComponentScan(basePackages = "com.app")
 @EnableTransactionManagement
 @EnableAspectJAutoProxy
-public class WebConfig implements WebMvcConfigurer {
+@PropertySource("classpath:pagination.properties")
+public class AppConfig {
 
 
     @Bean
@@ -37,7 +34,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     private Dotenv dotenv;
 
-    public WebConfig() {
+    public AppConfig() {
         try {
             dotenv = Dotenv.configure().filename(".env").load();
         } catch (Exception e) {

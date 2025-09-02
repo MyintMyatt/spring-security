@@ -8,7 +8,7 @@ public interface UserDao {
 
     User getUserByEmail(String email);
 
-    List<User> getAllUser();
+    List<User> getAllUser(int pageNumber, int pageSize,String sortField,String sortOrder);
 
     void saveUser(User user);
 

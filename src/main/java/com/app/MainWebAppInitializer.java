@@ -1,7 +1,7 @@
 package com.app;
 
 import com.app.configuration.SecurityConfig;
-import com.app.configuration.WebConfig;
+import com.app.configuration.AppConfig;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRegistration;
@@ -17,7 +17,7 @@ public class MainWebAppInitializer implements WebApplicationInitializer {
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
-        ctx.register(WebConfig.class, SecurityConfig.class);
+        ctx.register(AppConfig.class, SecurityConfig.class);
         servletContext.addListener(new ContextLoaderListener(ctx));
 
 //        // ✅ Register Spring Security filter

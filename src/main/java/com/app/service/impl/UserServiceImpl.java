@@ -89,7 +89,7 @@ public class UserServiceImpl implements UserService{
         userDao.deleteUser(user);
     }
 
-    public List<UserDto> getalluser() {
-        return userDao.getAllUser().stream().map(userMapper::mapUserToDto).collect(Collectors.toList());
+    public List<UserDto> getalluser(int page, int size,String sortField,String sortOrder) {
+        return userDao.getAllUser(page,size,sortField,sortOrder).stream().map(userMapper::mapUserToDto).collect(Collectors.toList());
     }
 }

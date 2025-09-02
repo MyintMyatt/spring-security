@@ -18,5 +18,5 @@ public interface UserService {
 
     void deleteUser(String email);
 
-    List<UserDto> getalluser();
+    List<UserDto> getalluser(int page, int size,String sortField,String sortOrder);
 }
