@@ -1,0 +1,186 @@
+2025-09-02 08:37:23 [32m[main][0;39m INFO  [36mo.s.web.context.ContextLoader[0;39m - Root WebApplicationContext: initialization started
+2025-09-02 08:37:24 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-09-02 08:37:25 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b8f60fe
+2025-09-02 08:37:25 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-09-02 08:37:26 [32m[main][0;39m INFO  [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-02 08:37:26 [32m[main][0;39m INFO  [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-09-02 08:37:26 [32m[main][0;39m WARN  [36morg.hibernate.orm.deprecation[0;39m - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-02 08:37:26 [32m[main][0;39m WARN  [36morg.hibernate.orm.deprecation[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-02 08:37:27 [32m[main][0;39m INFO  [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-02 08:37:28 [32m[main][0;39m INFO  [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-02 08:37:30 [32m[main][0;39m INFO  [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-02 08:37:31 [32m[main][0;39m INFO  [36mo.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer[0;39m - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2025-09-02 08:37:31 [32m[main][0;39m WARN  [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-02 08:37:32 [32m[main][0;39m INFO  [36mo.s.web.context.ContextLoader[0;39m - Root WebApplicationContext initialized in 9166 ms
+2025-09-02 08:37:32 [32m[main][0;39m INFO  [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcher'
+2025-09-02 08:37:32 [32m[main][0;39m INFO  [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 3 ms
+2025-09-02 08:49:13 [32m[http-nio-8080-exec-1][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: null
+2025-09-02 08:49:14 [32m[http-nio-8080-exec-1][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around start: ResponseEntity com.app.controller.UserController.login(LoginUserDao)
+2025-09-02 08:49:14 [32m[http-nio-8080-exec-1][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Entering Method: ResponseEntity com.app.controller.UserController.login(LoginUserDao)
+2025-09-02 08:49:14 [32m[http-nio-8080-exec-1][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Arguments: LoginUserDao(userEmail=orion@gmail.com, password=helloworld)
+2025-09-02 08:49:14 [32m[http-nio-8080-exec-1][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4b8f60fe (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 08:49:14 [32m[http-nio-8080-exec-1][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@17aee7b4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 08:49:14 [32m[http-nio-8080-exec-1][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4abfb8a8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 08:49:15 [32m[HikariPool-1:housekeeper][0;39m WARN  [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m49s807ms76µs500ns).
+2025-09-02 08:49:16 [32m[http-nio-8080-exec-1][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around end: ResponseEntity com.app.controller.UserController.login(LoginUserDao) excuted in 2059 ms
+2025-09-02 08:49:40 [32m[http-nio-8080-exec-5][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: null
+2025-09-02 08:50:17 [32m[http-nio-8080-exec-8][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvcmlvbkBnbWFpbC5jb20iLCJyb2xlIjpbeyJpZCI6NCwibmFtZSI6IlJPTEVfQURNSU4ifSx7ImlkIjozLCJuYW1lIjoiUk9MRV9VU0VSIn1dLCJpYXQiOjE3NTY3Nzk1NTYsImV4cCI6MTc1Njc4MTM1Nn0.s3Pe55G7EEjcdp_SYGbB5hH3K8mF1IAh-RskQije-WE
+2025-09-02 08:54:34 [32m[HikariPool-1:housekeeper][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1012205d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 08:54:40 [32m[HikariPool-1:housekeeper][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@21c8d56c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 08:54:42 [32m[HikariPool-1:housekeeper][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@703ddf12 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 08:55:12 [32m[HikariPool-1:housekeeper][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1c5ce61c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 09:00:19 [32m[http-nio-8080-exec-10][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvcmlvbkBnbWFpbC5jb20iLCJyb2xlIjpbeyJpZCI6NCwibmFtZSI6IlJPTEVfQURNSU4ifSx7ImlkIjozLCJuYW1lIjoiUk9MRV9VU0VSIn1dLCJpYXQiOjE3NTY3Nzk1NTYsImV4cCI6MTc1Njc4MTM1Nn0.s3Pe55G7EEjcdp_SYGbB5hH3K8mF1IAh-RskQije-WE
+2025-09-02 09:10:03 [32m[Thread-1][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-09-02 09:10:03 [32m[Thread-1][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-09-02 09:10:15 [32m[main][0;39m INFO  [36mo.s.web.context.ContextLoader[0;39m - Root WebApplicationContext: initialization started
+2025-09-02 09:10:17 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-09-02 09:10:18 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d8c51c9
+2025-09-02 09:10:18 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-09-02 09:10:18 [32m[main][0;39m INFO  [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-02 09:10:18 [32m[main][0;39m INFO  [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-09-02 09:10:19 [32m[main][0;39m WARN  [36morg.hibernate.orm.deprecation[0;39m - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-02 09:10:19 [32m[main][0;39m WARN  [36morg.hibernate.orm.deprecation[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-02 09:10:19 [32m[main][0;39m INFO  [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-02 09:10:21 [32m[main][0;39m INFO  [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-02 09:10:23 [32m[main][0;39m INFO  [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-02 09:10:24 [32m[main][0;39m INFO  [36mo.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer[0;39m - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2025-09-02 09:10:24 [32m[main][0;39m WARN  [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-02 09:10:25 [32m[main][0;39m INFO  [36mo.s.web.context.ContextLoader[0;39m - Root WebApplicationContext initialized in 9545 ms
+2025-09-02 09:10:25 [32m[main][0;39m INFO  [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcher'
+2025-09-02 09:10:25 [32m[main][0;39m INFO  [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 3 ms
+2025-09-02 09:10:35 [32m[http-nio-8080-exec-1][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: null
+2025-09-02 09:10:36 [32m[http-nio-8080-exec-1][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around start: ResponseEntity com.app.controller.UserController.login(LoginUserDao)
+2025-09-02 09:10:36 [32m[http-nio-8080-exec-1][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Entering Method: ResponseEntity com.app.controller.UserController.login(LoginUserDao)
+2025-09-02 09:10:36 [32m[http-nio-8080-exec-1][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Arguments: LoginUserDao(userEmail=orion@gmail.com, password=helloworld)
+2025-09-02 09:10:37 [32m[http-nio-8080-exec-1][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around end: ResponseEntity com.app.controller.UserController.login(LoginUserDao) excuted in 1401 ms
+2025-09-02 09:10:48 [32m[Thread-1][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-09-02 09:10:48 [32m[Thread-1][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-09-02 09:11:06 [32m[main][0;39m INFO  [36mo.s.web.context.ContextLoader[0;39m - Root WebApplicationContext: initialization started
+2025-09-02 09:11:07 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-09-02 09:11:08 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e93e779
+2025-09-02 09:11:08 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-09-02 09:11:08 [32m[main][0;39m INFO  [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-02 09:11:08 [32m[main][0;39m INFO  [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-09-02 09:11:08 [32m[main][0;39m WARN  [36morg.hibernate.orm.deprecation[0;39m - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-02 09:11:08 [32m[main][0;39m WARN  [36morg.hibernate.orm.deprecation[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-02 09:11:09 [32m[main][0;39m INFO  [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-02 09:11:10 [32m[main][0;39m INFO  [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-02 09:11:11 [32m[main][0;39m INFO  [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-02 09:11:12 [32m[main][0;39m INFO  [36mo.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer[0;39m - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2025-09-02 09:11:12 [32m[main][0;39m WARN  [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-02 09:11:13 [32m[main][0;39m INFO  [36mo.s.web.context.ContextLoader[0;39m - Root WebApplicationContext initialized in 7415 ms
+2025-09-02 09:11:13 [32m[main][0;39m INFO  [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcher'
+2025-09-02 09:11:13 [32m[main][0;39m INFO  [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 5 ms
+2025-09-02 09:11:21 [32m[http-nio-8080-exec-2][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: null
+2025-09-02 09:11:21 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around start: ResponseEntity com.app.controller.UserController.login(LoginUserDao)
+2025-09-02 09:11:21 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Entering Method: ResponseEntity com.app.controller.UserController.login(LoginUserDao)
+2025-09-02 09:11:21 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Arguments: LoginUserDao(userEmail=orion@gmail.com, password=helloworld)
+2025-09-02 09:11:22 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around end: ResponseEntity com.app.controller.UserController.login(LoginUserDao) excuted in 1143 ms
+2025-09-02 09:11:43 [32m[Thread-1][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-09-02 09:11:44 [32m[Thread-1][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-09-02 09:11:51 [32m[main][0;39m INFO  [36mo.s.web.context.ContextLoader[0;39m - Root WebApplicationContext: initialization started
+2025-09-02 09:11:52 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-09-02 09:11:53 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@de1b4dd
+2025-09-02 09:11:53 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-09-02 09:11:53 [32m[main][0;39m INFO  [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-02 09:11:54 [32m[main][0;39m INFO  [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-09-02 09:11:54 [32m[main][0;39m WARN  [36morg.hibernate.orm.deprecation[0;39m - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-02 09:11:54 [32m[main][0;39m WARN  [36morg.hibernate.orm.deprecation[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-02 09:11:54 [32m[main][0;39m INFO  [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-02 09:11:56 [32m[main][0;39m INFO  [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-02 09:11:57 [32m[main][0;39m INFO  [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-02 09:11:58 [32m[main][0;39m INFO  [36mo.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer[0;39m - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2025-09-02 09:11:58 [32m[main][0;39m WARN  [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-02 09:11:59 [32m[main][0;39m INFO  [36mo.s.web.context.ContextLoader[0;39m - Root WebApplicationContext initialized in 8529 ms
+2025-09-02 09:11:59 [32m[main][0;39m INFO  [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcher'
+2025-09-02 09:11:59 [32m[main][0;39m INFO  [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 2 ms
+2025-09-02 09:12:07 [32m[http-nio-8080-exec-2][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: null
+2025-09-02 09:12:07 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around start: ResponseEntity com.app.controller.UserController.login(LoginUserDao)
+2025-09-02 09:12:07 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Entering Method: ResponseEntity com.app.controller.UserController.login(LoginUserDao)
+2025-09-02 09:12:07 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Arguments: LoginUserDao(userEmail=orion@gmail.com, password=helloworld)
+2025-09-02 09:12:09 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around end: ResponseEntity com.app.controller.UserController.login(LoginUserDao) excuted in 1418 ms
+2025-09-02 09:12:50 [32m[http-nio-8080-exec-5][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJvcmlvbkBnbWFpbC5jb20iLCJyb2xlIjpbeyJpZCI6NCwibmFtZSI6IlJPTEVfQURNSU4ifSx7ImlkIjozLCJuYW1lIjoiUk9MRV9VU0VSIn1dLCJpYXQiOjE3NTY3ODA5MjgsImV4cCI6MTc1Njc4MjcyOH0.7u-9rpoTgowaTml8Zh2-Cg1ApxoBLMBlApyCkOLwydtUeUuwPjrVhiCbaK6eTRdL
+2025-09-02 09:13:05 [32m[http-nio-8080-exec-6][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJvcmlvbkBnbWFpbC5jb20iLCJyb2xlIjpbeyJpZCI6NCwibmFtZSI6IlJPTEVfQURNSU4ifSx7ImlkIjozLCJuYW1lIjoiUk9MRV9VU0VSIn1dLCJpYXQiOjE3NTY3ODA5MjgsImV4cCI6MTc1Njc4MjcyOH0.7u-9rpoTgowaTml8Zh2-Cg1ApxoBLMBlApyCkOLwydtUeUuwPjrVhiCbaK6eTRdL
+2025-09-02 09:19:30 [32m[HikariPool-1:housekeeper][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6dc3e2b1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 09:19:46 [32m[HikariPool-1:housekeeper][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@de1b4dd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 09:20:00 [32m[HikariPool-1:housekeeper][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7080d413 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 10:08:15 [32m[Thread-1][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-09-02 10:08:15 [32m[Thread-1][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-09-02 10:41:48 [32m[main][0;39m INFO  [36mo.s.web.context.ContextLoader[0;39m - Root WebApplicationContext: initialization started
+2025-09-02 10:41:50 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-09-02 10:41:51 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fba9ca1
+2025-09-02 10:41:51 [32m[main][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-09-02 10:41:51 [32m[main][0;39m INFO  [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-02 10:41:52 [32m[main][0;39m INFO  [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-09-02 10:41:52 [32m[main][0;39m WARN  [36morg.hibernate.orm.deprecation[0;39m - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-02 10:41:52 [32m[main][0;39m WARN  [36morg.hibernate.orm.deprecation[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-02 10:41:52 [32m[main][0;39m INFO  [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-02 10:41:54 [32m[main][0;39m INFO  [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-02 10:41:56 [32m[main][0;39m INFO  [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-02 10:41:57 [32m[main][0;39m INFO  [36mo.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer[0;39m - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2025-09-02 10:41:57 [32m[main][0;39m WARN  [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-02 10:41:58 [32m[main][0;39m INFO  [36mo.s.web.context.ContextLoader[0;39m - Root WebApplicationContext initialized in 9855 ms
+2025-09-02 10:41:58 [32m[main][0;39m INFO  [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcher'
+2025-09-02 10:41:58 [32m[main][0;39m INFO  [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 2 ms
+2025-09-02 10:42:21 [32m[http-nio-8080-exec-2][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: null
+2025-09-02 10:42:21 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around start: ResponseEntity com.app.controller.UserController.login(LoginUserDao)
+2025-09-02 10:42:21 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Entering Method: ResponseEntity com.app.controller.UserController.login(LoginUserDao)
+2025-09-02 10:42:21 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Arguments: LoginUserDao(userEmail=orion@gmail.com, password=helloworld)
+2025-09-02 10:42:23 [32m[http-nio-8080-exec-2][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around end: ResponseEntity com.app.controller.UserController.login(LoginUserDao) excuted in 1851 ms
+2025-09-02 10:42:38 [32m[http-nio-8080-exec-3][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJvcmlvbkBnbWFpbC5jb20iLCJyb2xlcyI6W3siaWQiOjQsIm5hbWUiOiJST0xFX0FETUlOIn0seyJpZCI6MywibmFtZSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNzU2Nzg2MzQzLCJleHAiOjE3NTY3ODgxNDN9.ZmsB55b3mVPh5RUM-u1wvxJSjLObOBsTXlsP2-trTKHbcSjEQRRDVRwEqZDKdmpU
+2025-09-02 10:42:38 [32m[http-nio-8080-exec-3][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around start: ResponseEntity com.app.controller.UserController.me()
+2025-09-02 10:42:38 [32m[http-nio-8080-exec-3][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Entering Method: ResponseEntity com.app.controller.UserController.me()
+2025-09-02 10:42:38 [32m[http-nio-8080-exec-3][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Arguments: {}
+2025-09-02 10:42:38 [32m[http-nio-8080-exec-3][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around end: ResponseEntity com.app.controller.UserController.me() excuted in 1 ms
+2025-09-02 10:43:24 [32m[http-nio-8080-exec-5][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJvcmlvbkBnbWFpbC5jb20iLCJyb2xlcyI6W3siaWQiOjQsIm5hbWUiOiJST0xFX0FETUlOIn0seyJpZCI6MywibmFtZSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNzU2Nzg2MzQzLCJleHAiOjE3NTY3ODgxNDN9.ZmsB55b3mVPh5RUM-u1wvxJSjLObOBsTXlsP2-trTKHbcSjEQRRDVRwEqZDKdmpU
+2025-09-02 10:43:25 [32m[http-nio-8080-exec-5][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around start: ResponseEntity com.app.controller.UserController.me()
+2025-09-02 10:43:25 [32m[http-nio-8080-exec-5][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Entering Method: ResponseEntity com.app.controller.UserController.me()
+2025-09-02 10:43:25 [32m[http-nio-8080-exec-5][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Arguments: {}
+2025-09-02 10:43:25 [32m[http-nio-8080-exec-5][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around end: ResponseEntity com.app.controller.UserController.me() excuted in 1 ms
+2025-09-02 10:43:28 [32m[http-nio-8080-exec-7][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: null
+2025-09-02 10:43:32 [32m[http-nio-8080-exec-8][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: Basic bXlpbnRteWF0QGdtYWlsLmNvbTpoZWxsd29ybGQ=
+2025-09-02 10:43:48 [32m[http-nio-8080-exec-9][0;39m INFO  [36mcom.app.filter.JwtAuthFilter[0;39m - Authorization Header: Basic b3Jpb25AZ21haWwuY29tOmhlbGxvd29ybGQ=
+2025-09-02 10:43:48 [32m[http-nio-8080-exec-9][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around start: ResponseEntity com.app.controller.UserController.me()
+2025-09-02 10:43:48 [32m[http-nio-8080-exec-9][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Entering Method: ResponseEntity com.app.controller.UserController.me()
+2025-09-02 10:43:48 [32m[http-nio-8080-exec-9][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Arguments: {}
+2025-09-02 10:43:48 [32m[http-nio-8080-exec-9][0;39m INFO  [36mc.app.aspect.ControllerLoggingAspect[0;39m - Around end: ResponseEntity com.app.controller.UserController.me() excuted in 1 ms
+2025-09-02 11:06:58 [32m[HikariPool-1:housekeeper][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3fba9ca1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 11:07:12 [32m[HikariPool-1:housekeeper][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@c026272 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 11:08:08 [32m[HikariPool-1:housekeeper][0;39m WARN  [36mcom.zaxxer.hikari.pool.PoolBase[0;39m - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@54170400 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-09-02 11:20:52 [32m[Thread-1][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-09-02 11:20:52 [32m[Thread-1][0;39m INFO  [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
